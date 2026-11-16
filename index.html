@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solange Emerick · Links</title>
+<meta name="description" content="Mentora de mulheres e escritora. Restaurando a sua identidade em Cristo, com Ciência e Bíblia.">
+<meta name="theme-color" content="#FBF5EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&family=Allura&display=swap">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --marfim:#FBF5EC; --marfim-2:#F3E8D8; --areia:#E9D9C1;
+  --vinho:#6B1F2C; --vinho-2:#8E2F3F; --vinho-3:#4A1520;
+  --ouro:#B98A3E; --ouro-2:#D9B46C; --ouro-3:#F1DDAE;
+  --rosa:#EBC9C2; --tinta:#2A1A16; --tinta-2:#6E5A50;
+  --display:"Cormorant Garamond",Garamond,"Times New Roman",serif;
+  --texto:"Jost",system-ui,-apple-system,sans-serif;
+  --assina:"Allura",cursive;
+  --curva:cubic-bezier(.22,1,.36,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--marfim);color:var(--tinta);font:400 15.5px/1.6 var(--texto);overflow-x:hidden;-webkit-font-smoothing:antialiased;font-variant-numeric:lining-nums}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--vinho);outline-offset:3px;border-radius:8px}
+
+/* fundo com grão e luz */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(70vmax 50vmax at 85% -10%,rgba(217,180,108,.28),transparent 60%),
+    radial-gradient(60vmax 40vmax at -10% 40%,rgba(235,201,194,.35),transparent 60%),
+    radial-gradient(50vmax 40vmax at 110% 90%,rgba(107,31,44,.08),transparent 60%),
+    var(--marfim)}
+.grao{position:fixed;inset:-50%;z-index:60;pointer-events:none;opacity:.06;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grao 1.2s steps(4) infinite}
+@keyframes grao{0%{transform:translate(0,0)}25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-2%,-1%)}100%{transform:translate(0,0)}}
+
+/* barra de leitura */
+.leitura{position:fixed;top:0;left:0;height:3px;width:100%;z-index:70;transform-origin:0 50%;transform:scaleX(0);
+  background:linear-gradient(90deg,var(--ouro),var(--vinho))}
+
+
+/* ===== COLUNA ===== */
+.pagina{max-width:470px;margin:0 auto;padding:0 18px calc(40px + env(safe-area-inset-bottom));position:relative}
+
+/* ===== TOPO ===== */
+.topo{position:relative;padding-top:calc(26px + env(safe-area-inset-top));text-align:center}
+.marca{display:flex;align-items:center;justify-content:space-between;font:600 10px/1 var(--texto);letter-spacing:.38em;text-transform:uppercase;color:var(--tinta-2)}
+.marca .soc{display:flex;gap:8px}
+.marca .soc a{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(107,31,44,.18);color:var(--vinho);transition:.35s var(--curva)}
+.marca .soc a:hover{background:var(--vinho);color:var(--marfim);transform:translateY(-2px)}
+.marca svg{width:16px;height:16px}
+.nomev{display:inline-flex;align-items:center;gap:6px}
+.nomev .verif{width:15px;height:15px;flex:none}
+
+.arco{position:relative;width:min(78%,300px);margin:30px auto 0}
+.arco .moldura{position:relative;aspect-ratio:3/4;border-radius:999px 999px 26px 26px;overflow:hidden;
+  box-shadow:0 30px 60px -20px rgba(74,21,32,.45);transform:translateZ(0)}
+.arco .moldura img{width:100%;height:115%;object-fit:cover;object-position:50% 12%;will-change:transform}
+.arco .moldura::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(74,21,32,.35))}
+.arco .contorno{position:absolute;inset:-12px;border:1px solid var(--ouro);border-radius:999px 999px 34px 34px;opacity:.55;pointer-events:none}
+.selo{position:absolute;right:-30px;bottom:34px;width:112px;height:112px;z-index:3;border-radius:50%;background:var(--vinho);color:var(--ouro-3);
+  display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(74,21,32,.6)}
+.selo svg{position:absolute;inset:0;width:100%;height:100%;animation:gira 16s linear infinite}
+.selo text{font:600 9.4px var(--texto);letter-spacing:.24em;fill:var(--ouro-3);text-transform:uppercase}
+.selo .miolo{font:400 34px/1 var(--assina);color:var(--ouro-2);transform:translateY(2px)}
+@keyframes gira{to{transform:rotate(360deg)}}
+.particulas{position:absolute;inset:-40px -18px 0;z-index:2;pointer-events:none;width:calc(100% + 36px);height:calc(100% + 40px)}
+
+.topo h1{margin-top:34px;font:500 clamp(38px,11vw,50px)/1 var(--display);letter-spacing:-.01em;color:var(--tinta);text-wrap:balance}
+.topo h1 em{font-style:italic;color:var(--vinho)}
+.topo h1 .pal{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.topo h1 .pal>span{display:inline-block}
+.js .topo h1 .pal>span{transform:translateY(110%);animation:palavra 1s var(--curva) forwards;animation-delay:calc(.45s + var(--i)*.07s)}
+@keyframes palavra{to{transform:none}}
+.quem{margin:16px auto 0;max-width:34ch;color:var(--tinta-2);font-size:14.5px;text-wrap:pretty}
+.quem b{color:var(--tinta);font-weight:600}
+.numeros{display:grid;grid-template-columns:repeat(3,1fr);margin-top:24px;border-top:1px solid rgba(107,31,44,.14);border-bottom:1px solid rgba(107,31,44,.14)}
+.numeros div{padding:14px 4px}
+.numeros div+div{border-left:1px solid rgba(107,31,44,.14)}
+.numeros b{display:block;font:400 26px/1 var(--texto);letter-spacing:.02em;color:var(--vinho)}
+.numeros span{display:block;margin-top:6px;font:600 9px/1.3 var(--texto);letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-2)}
+.desce{display:inline-flex;flex-direction:column;align-items:center;gap:8px;margin-top:26px;font:600 9.5px/1 var(--texto);letter-spacing:.34em;text-transform:uppercase;color:var(--tinta-2)}
+.desce i{width:1px;height:36px;background:linear-gradient(var(--vinho),transparent);position:relative;overflow:hidden}
+.desce i::after{content:"";position:absolute;left:-1px;width:3px;height:10px;border-radius:2px;background:var(--ouro);animation:pinga 1.8s var(--curva) infinite}
+@keyframes pinga{from{top:-10px}to{top:36px}}
+
+.js .arco .moldura{animation:abre 1.3s var(--curva) both}
+.js .arco .contorno{animation:surge 1.2s var(--curva) .3s both}
+.js .selo{animation:carimbo .9s var(--curva) .8s both}
+.js .marca{animation:surge .9s var(--curva) both}
+@keyframes abre{from{clip-path:inset(100% 0 0 0 round 999px 999px 26px 26px);transform:scale(1.06)}to{clip-path:inset(0 0 0 0 round 999px 999px 26px 26px)}}
+@keyframes surge{from{opacity:0;transform:translateY(12px)}}
+@keyframes carimbo{from{opacity:0;transform:scale(.4) rotate(-40deg)}}
+
+/* ===== FAIXA ===== */
+.faixa{margin:34px -18px 0;background:var(--vinho);color:var(--ouro-3);overflow:hidden;transform:rotate(-2.2deg);box-shadow:0 10px 30px -12px rgba(74,21,32,.6)}
+.faixa div{display:flex;width:max-content;animation:corre 26s linear infinite}
+.faixa span{padding:13px 0;font:italic 500 21px/1 var(--display);white-space:nowrap}
+.faixa span::after{content:"✦";font-style:normal;font-size:11px;color:var(--ouro-2);margin:0 18px;vertical-align:3px}
+@keyframes corre{to{transform:translateX(-50%)}}
+
+/* ===== TÍTULOS DE SEÇÃO ===== */
+.secao{margin-top:72px}
+.cab{display:flex;align-items:baseline;gap:12px;margin-bottom:22px}
+.cab .n{font:italic 500 17px/1 var(--display);color:var(--ouro)}
+.cab h2{font:500 34px/1.05 var(--display);letter-spacing:-.01em}
+.cab h2 em{font-style:italic;color:var(--vinho)}
+.cab::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(185,138,62,.6),transparent);align-self:center}
+
+/* ===== CARTAS EMPILHADAS ===== */
+.pilha{position:relative}
+.carta{position:sticky;top:calc(64px + var(--k)*14px);display:block;height:min(560px,calc(100svh - 120px));min-height:470px;border-radius:30px;overflow:hidden;margin-bottom:22px;
+  background:var(--vinho-3);color:var(--marfim);box-shadow:0 -10px 40px -18px rgba(42,26,22,.5);transform-origin:50% 0;will-change:transform}
+.carta .foto{position:absolute;inset:0}
+.carta .foto img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--curva)}
+.carta:hover .foto img{transform:scale(1.05)}
+.carta .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,15,20,.05) 30%,rgba(42,15,20,.6) 58%,rgba(42,15,20,.94) 85%)}
+.carta .num{position:absolute;top:16px;left:20px;font:italic 500 72px/1 var(--display);color:rgba(251,245,236,.9);mix-blend-mode:overlay}
+.carta .etq{position:absolute;top:22px;right:18px;font:600 9.5px/1 var(--texto);letter-spacing:.22em;text-transform:uppercase;padding:8px 11px;border-radius:999px;
+  background:rgba(251,245,236,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(251,245,236,.3)}
+.carta .tx{position:absolute;left:22px;right:22px;bottom:22px}
+.carta h3{font:500 40px/1 var(--display);letter-spacing:-.01em;text-wrap:balance}
+.carta h3 em{font-style:italic;color:var(--ouro-2)}
+.carta p{margin-top:10px;font-size:14px;color:rgba(251,245,236,.82);text-wrap:pretty}
+.acao{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;padding:8px 8px 8px 20px;border-radius:999px;
+  background:var(--ouro-3);color:var(--vinho-3);font:600 12px/1 var(--texto);letter-spacing:.14em;text-transform:uppercase;overflow:hidden;isolation:isolate}
+.acao .seta{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--vinho);color:var(--ouro-3);flex:none;transition:transform .5s var(--curva)}
+.acao .seta svg{width:16px;height:16px}
+.acao::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.7) 50%,transparent 70%);transform:translateX(-120%);animation:brilho 3.6s ease-in-out infinite}
+@keyframes brilho{0%,60%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+.carta:hover .acao .seta,.acao:hover .seta{transform:rotate(-45deg)}
+.acao small{font:600 12px/1 var(--texto);letter-spacing:.02em;text-transform:none;opacity:.75;margin-left:auto;margin-right:4px}
+.acao.clara{background:transparent;color:var(--marfim);border:1px solid rgba(251,245,236,.5)}
+.acao.clara::before{display:none}
+.acao.clara .seta{background:var(--ouro-3);color:var(--vinho-3)}
+
+/* ===== SISTEMA SOLAR (6 inteligências) ===== */
+.solar{position:relative;border-radius:30px;padding:26px 18px 22px;background:linear-gradient(170deg,var(--vinho-3),var(--vinho) 70%,var(--vinho-2));color:var(--marfim);overflow:hidden}
+.solar::before{content:"";position:absolute;inset:0;background-image:radial-gradient(1.4px 1.4px at 20% 30%,var(--ouro-3),transparent),radial-gradient(1px 1px at 70% 15%,#fff,transparent),radial-gradient(1.2px 1.2px at 85% 60%,var(--ouro-2),transparent),radial-gradient(1px 1px at 12% 80%,#fff,transparent),radial-gradient(1.3px 1.3px at 45% 90%,var(--ouro-3),transparent),radial-gradient(1px 1px at 60% 45%,#fff,transparent);opacity:.7;animation:pisca 4s ease-in-out infinite alternate}
+@keyframes pisca{to{opacity:.25}}
+.solar .intro{position:relative;text-align:center;font-size:14px;color:rgba(251,245,236,.78);max-width:32ch;margin:0 auto}
+.solar .intro b{color:var(--ouro-3);font-weight:600}
+.orbita{position:relative;width:min(100%,320px);aspect-ratio:1;margin:18px auto 0}
+.orbita .anel{position:absolute;inset:0;border-radius:50%;border:1px dashed rgba(241,221,174,.3)}
+.orbita .anel.b{inset:22%;border-style:solid;border-color:rgba(241,221,174,.12)}
+.orbita .giro{position:absolute;inset:0;animation:gira 48s linear infinite}
+.orbita.parada .giro,.orbita.parada .planeta>button{animation-play-state:paused}
+.orbita{container-type:inline-size}
+.orbita .anel:not(.b){inset:30px}
+.planeta{position:absolute;left:50%;top:50%;width:0;height:0;transform:rotate(var(--a)) translateY(calc(30px - 50cqw))}
+.planeta>button{position:absolute;width:58px;height:58px;left:-29px;top:-29px;border-radius:50%;
+  transform:rotate(calc(var(--a) * -1));animation:contragiro 48s linear infinite;
+  background:radial-gradient(circle at 35% 30%,var(--ouro-3),var(--ouro) 70%);color:var(--vinho-3);
+  font:600 11px/1 var(--texto);letter-spacing:.06em;box-shadow:0 0 0 6px rgba(241,221,174,.08),0 8px 18px rgba(0,0,0,.35);transition:box-shadow .4s,background .4s}
+@keyframes contragiro{from{transform:rotate(calc(var(--a) * -1))}to{transform:rotate(calc(var(--a) * -1 - 360deg))}}
+.planeta>button[aria-pressed="true"]{background:radial-gradient(circle at 35% 30%,#fff,var(--rosa) 70%);box-shadow:0 0 0 8px rgba(235,201,194,.25),0 0 30px rgba(241,221,174,.8)}
+.nucleo{position:absolute;left:50%;top:50%;width:112px;height:112px;margin:-56px 0 0 -56px;border-radius:50%;display:grid;place-items:center;text-align:center;
+  background:radial-gradient(circle,var(--ouro-3),var(--ouro-2) 55%,var(--ouro));color:var(--vinho-3);
+  box-shadow:0 0 50px 10px rgba(217,180,108,.5);animation:pulsa 3.2s ease-in-out infinite}
+.nucleo span{font:italic 600 17px/1.1 var(--display)}
+.nucleo small{display:block;font:600 8px/1 var(--texto);letter-spacing:.24em;text-transform:uppercase;margin-bottom:5px}
+@keyframes pulsa{50%{box-shadow:0 0 70px 18px rgba(217,180,108,.65)}}
+.detalhe{position:relative;margin-top:18px;min-height:112px;padding:16px 18px;border-radius:18px;background:rgba(251,245,236,.08);border:1px solid rgba(241,221,174,.2)}
+.detalhe .sg{font:600 9.5px/1 var(--texto);letter-spacing:.24em;color:var(--ouro-2);text-transform:uppercase}
+.detalhe h4{margin-top:7px;font:500 26px/1.1 var(--display)}
+.detalhe p{margin-top:6px;font-size:13.5px;color:rgba(251,245,236,.8)}
+.detalhe.troca{animation:entra .55s var(--curva)}
+@keyframes entra{from{opacity:0;transform:translateY(10px)}}
+.solar .acao{margin-top:16px}
+
+/* ===== RAIO-X ===== */
+.raiox{position:relative;border-radius:30px;padding:24px 20px;background:var(--marfim-2);border:1px solid rgba(185,138,62,.35);overflow:hidden}
+.raiox .topo-rx{display:flex;align-items:center;gap:16px}
+.raiox .sol-rx{width:66px;height:66px;flex:none}
+.sol-rx line{stroke:var(--areia);stroke-width:4;stroke-linecap:round;transition:stroke .6s var(--curva)}
+.sol-rx line.on{stroke:var(--ouro)}
+.sol-rx circle{fill:var(--vinho);transition:transform .6s var(--curva);transform-origin:50% 50%}
+.raiox h3{font:500 27px/1.08 var(--display)}
+.raiox h3 em{font-style:italic;color:var(--vinho)}
+.raiox .sub{font-size:13px;color:var(--tinta-2);margin-top:4px}
+.palco-rx{position:relative;margin-top:20px;display:grid}
+.perg{grid-area:1/1;display:flex;flex-direction:column;transition:transform .6s var(--curva),opacity .5s}
+.perg.fora{transform:translateX(-60px) rotate(-3deg);opacity:0;pointer-events:none}
+.perg.espera{transform:translateX(60px) rotate(3deg);opacity:0;pointer-events:none}
+.perg .q{font:600 10px/1 var(--texto);letter-spacing:.24em;text-transform:uppercase;color:var(--ouro)}
+.perg p{margin-top:10px;font:500 24px/1.25 var(--display);color:var(--tinta);text-wrap:balance}
+.opcoes{display:flex;flex-direction:column;gap:8px;margin-top:auto;padding-top:16px}
+.opcoes button{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;border-radius:14px;background:var(--marfim);border:1px solid rgba(107,31,44,.14);
+  font:600 13.5px/1 var(--texto);text-align:left;transition:.3s var(--curva)}
+.opcoes button::after{content:"";width:16px;height:16px;border-radius:50%;border:1.5px solid rgba(107,31,44,.35);transition:.3s}
+.opcoes button:hover{border-color:var(--vinho);transform:translateX(4px)}
+.opcoes button.marcada{background:var(--vinho);color:var(--marfim);border-color:var(--vinho)}
+.opcoes button.marcada::after{background:var(--ouro-2);border-color:var(--ouro-2)}
+.voltar{margin-top:12px;font:600 11px/1 var(--texto);letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-2);visibility:hidden}
+.voltar.ve{visibility:visible}
+.resultado{animation:entra .7s var(--curva)}
+.resultado .etq2{display:inline-block;font:600 9.5px/1 var(--texto);letter-spacing:.22em;text-transform:uppercase;padding:7px 10px;border-radius:999px;background:var(--vinho);color:var(--ouro-3)}
+.resultado h4{margin-top:12px;font:500 31px/1.05 var(--display);color:var(--vinho)}
+.resultado p{margin-top:8px;font-size:14px;color:var(--tinta-2)}
+.resultado .acao{margin-top:16px}
+.resultado .acao.linha{background:transparent;border:1px solid var(--vinho);color:var(--vinho)}
+.resultado .acao.linha::before{display:none}
+.resultado .refaz{display:block;margin:14px auto 0;font:600 11px/1 var(--texto);letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-2)}
+
+/* ===== LIVRO ===== */
+.livro{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:10px;padding:22px 18px 22px 8px;border-radius:30px;
+  background:radial-gradient(80% 90% at 30% 50%,var(--ouro-3),var(--ouro-2) 60%,var(--ouro));perspective:900px;overflow:hidden}
+.livro::after{content:"";position:absolute;inset:0;background:radial-gradient(40% 50% at 30% 50%,rgba(255,255,255,.6),transparent 70%);pointer-events:none;mix-blend-mode:soft-light}
+.livro .capa{position:relative;transform-style:preserve-3d;transition:transform .5s var(--curva);animation:flutua 5s ease-in-out infinite}
+.livro .capa img{filter:drop-shadow(0 22px 22px rgba(74,21,32,.45))}
+@keyframes flutua{50%{translate:0 -10px}}
+.livro .tx{position:relative;z-index:1;color:var(--vinho-3)}
+.livro .etq3{font:600 9.5px/1 var(--texto);letter-spacing:.24em;text-transform:uppercase}
+.livro h3{margin-top:8px;font:500 30px/1 var(--display)}
+.livro h3 em{font-style:italic}
+.livro p{margin-top:8px;font-size:13px;line-height:1.45}
+.livro .frase{font:italic 600 18px/1.2 var(--display)}
+.livro .acao{white-space:nowrap;background:var(--vinho-3);color:var(--ouro-3);padding:6px 6px 6px 14px;font-size:10.5px}
+.livro .acao .seta{width:34px;height:34px;background:var(--ouro-3);color:var(--vinho-3)}
+
+/* ===== AGENDA ===== */
+.agenda{position:relative;border-radius:30px;background:var(--marfim);border:1px solid rgba(107,31,44,.14);padding:20px;box-shadow:0 20px 50px -30px rgba(74,21,32,.4)}
+.polaroide{position:relative;margin:4px 6px 0;padding:10px 10px 40px;background:#fff;border-radius:6px;transform:rotate(-2.5deg);box-shadow:0 18px 30px -16px rgba(42,26,22,.45);transition:transform .7s var(--curva)}
+.polaroide:hover{transform:rotate(0) scale(1.01)}
+.polaroide img{aspect-ratio:1;object-fit:cover;border-radius:3px}
+.polaroide figcaption{position:absolute;left:0;right:0;bottom:8px;text-align:center;font:400 27px/1 var(--assina);color:var(--vinho)}
+.polaroide .fita{position:absolute;top:-12px;left:50%;width:90px;height:26px;margin-left:-45px;background:rgba(235,201,194,.75);transform:rotate(4deg)}
+.abas{display:flex;margin-top:24px;padding:4px;border-radius:999px;background:var(--marfim-2);position:relative}
+.abas button{flex:1;position:relative;z-index:1;padding:11px 8px;border-radius:999px;font:600 11px/1 var(--texto);letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-2);transition:color .4s}
+.abas button[aria-selected="true"]{color:var(--marfim)}
+.abas .pilula{position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:999px;background:var(--vinho);transition:transform .55s var(--curva)}
+.abas[data-sel="1"] .pilula{transform:translateX(100%)}
+.painel{margin-top:16px}
+.painel h3{font:500 29px/1.08 var(--display)}
+.painel h3 em{font-style:italic;color:var(--vinho)}
+.painel p{margin-top:8px;font-size:14px;color:var(--tinta-2)}
+.temas{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.temas span{font-size:12px;font-weight:600;padding:7px 11px;border-radius:999px;background:var(--marfim-2);color:var(--vinho-3)}
+.painel .acao{background:var(--vinho);color:var(--ouro-3)}
+.painel .acao .seta{background:var(--ouro-3);color:var(--vinho)}
+.painel[hidden]{display:none}
+.painel.troca{animation:entra .5s var(--curva)}
+
+/* ===== MAIS ===== */
+.mais{display:flex;flex-direction:column}
+.item{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:18px 4px;border-bottom:1px solid rgba(107,31,44,.14);position:relative}
+.item:first-child{border-top:1px solid rgba(107,31,44,.14)}
+.item::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--marfim-2),transparent);transform:scaleX(0);transform-origin:0 50%;transition:transform .6s var(--curva);z-index:-1}
+.item:hover::before{transform:scaleX(1)}
+.item .i{font:italic 500 16px/1 var(--display);color:var(--ouro);width:22px}
+.item b{display:block;font:500 21px/1.15 var(--display)}
+.item small{display:block;margin-top:3px;font-size:12.5px;color:var(--tinta-2)}
+.item .vai{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(107,31,44,.2);color:var(--vinho);transition:.45s var(--curva)}
+.item .vai svg{width:15px;height:15px}
+.item:hover .vai{background:var(--vinho);color:var(--marfim);transform:rotate(-45deg)}
+.item .breve{font:600 9px/1 var(--texto);letter-spacing:.2em;text-transform:uppercase;color:var(--ouro);border:1px solid var(--ouro);padding:6px 8px;border-radius:999px}
+.item.desliga{cursor:default}
+
+/* ===== RODAPÉ ===== */
+.rodape{margin-top:80px;text-align:center;position:relative}
+.rodape .redondo{width:150px;height:150px;margin:0 auto;border-radius:50%;overflow:hidden;border:5px solid var(--marfim);box-shadow:0 0 0 1px var(--ouro),0 20px 40px -18px rgba(42,26,22,.5)}
+.rodape .redondo img{width:100%;height:100%;object-fit:cover;object-position:50% 48%}
+.versiculo{margin-top:28px;font:italic 500 27px/1.25 var(--display);color:var(--tinta);text-wrap:balance}
+.versiculo .w{display:inline-block;opacity:.12;transition:opacity .5s}
+.versiculo .w.on{opacity:1}
+.ref{margin-top:12px;font:600 10px/1 var(--texto);letter-spacing:.3em;color:var(--ouro)}
+.assinatura{margin-top:30px;font:400 58px/1 var(--assina);color:var(--vinho)}
+.contato{margin-top:20px;font-size:12px;color:var(--tinta-2);line-height:1.8}
+.contato a{font-weight:700;color:var(--vinho);letter-spacing:.18em}
+
+/* ===== FOLHA (convite) ===== */
+dialog.folha{position:fixed;inset:auto 0 0;margin:0 auto;width:100%;max-width:470px;max-height:92svh;border:0;border-radius:28px 28px 0 0;padding:0;background:var(--marfim);color:var(--tinta);
+  box-shadow:0 -20px 60px rgba(42,26,22,.35)}
+dialog.folha[open]{animation:folha .55s var(--curva)}
+dialog.folha::backdrop{background:rgba(42,15,20,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+@keyframes folha{from{transform:translateY(100%)}}
+.folha .alca{width:44px;height:4px;border-radius:4px;background:var(--areia);margin:10px auto 0}
+.folha form{padding:16px 20px calc(24px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:12px;overflow:auto}
+.folha .tt{grid-column:1/-1;display:flex;justify-content:space-between;align-items:start;gap:10px}
+.folha h3{font:500 29px/1.05 var(--display)}
+.folha h3 em{font-style:italic;color:var(--vinho)}
+.folha .fecha{width:36px;height:36px;border-radius:50%;background:var(--marfim-2);font-size:20px;line-height:1;flex:none}
+.campo{display:flex;flex-direction:column;gap:6px;min-width:0}
+.campo.cheio{grid-column:1/-1}
+.campo label{font:600 9.5px/1 var(--texto);letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-2)}
+.campo input,.campo select,.campo textarea{width:100%;min-width:0;font:500 16px/1.3 var(--texto);color:var(--tinta);background:#fff;border:1px solid rgba(107,31,44,.18);border-radius:12px;padding:12px 13px;transition:border-color .3s,box-shadow .3s}
+.campo input:focus,.campo select:focus,.campo textarea:focus{outline:0;border-color:var(--vinho);box-shadow:0 0 0 4px rgba(107,31,44,.1)}
+.campo textarea{min-height:76px;resize:vertical}
+.folha .acao{grid-column:1/-1;margin-top:4px;background:var(--vinho);color:var(--ouro-3);border:0;cursor:pointer;width:100%}
+.folha .acao .seta{background:var(--ouro-3);color:var(--vinho)}
+.aviso{grid-column:1/-1;font-size:13px;color:var(--vinho-2);min-height:0}
+@media (max-width:360px){.folha form{grid-template-columns:1fr}.livro{grid-template-columns:1fr;text-align:center;padding:22px}.livro .capa{width:60%;margin:0 auto}}
+
+/* ===== REVELAR NA ROLAGEM ===== */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity 1s var(--curva),transform 1s var(--curva);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (min-width:760px){
+  .pagina{padding-top:20px}
+  body::after{content:"Sol";position:fixed;left:-2vw;bottom:-8vw;font:400 30vw/1 var(--assina);color:rgba(107,31,44,.05);z-index:-1;pointer-events:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .js .topo h1 .pal>span{transform:none}
+  .carta{position:relative;top:0}
+}
+</style>
+</head>
+<body>
+<div class="grao" aria-hidden="true"></div>
+<div class="leitura" aria-hidden="true"></div>
+
+
+<main class="pagina">
+
+  <!-- TOPO -->
+  <header class="topo">
+    <div class="marca">
+      <span class="nomev">Solange&nbsp;Emerick<svg class="verif" viewBox="0 0 24 24" aria-label="Perfil verificado"><path fill="#3897F0" d="M12 1.5l2.6 1.9 3.2-.1 1 3 2.6 1.9-1 3 1 3-2.6 1.9-1 3-3.2-.1L12 22.5l-2.6-1.9-3.2.1-1-3L2.6 15.8l1-3-1-3 2.6-1.9 1-3 3.2.1z"/><path d="M8 12.3l2.7 2.7L16.3 9.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div class="soc">
+        <a href="https://www.instagram.com/solangeemerick/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="https://wa.me/5541999001073" target="_blank" rel="noopener" aria-label="WhatsApp da equipe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="arco">
+      <canvas class="particulas" aria-hidden="true"></canvas>
+      <div class="contorno"></div>
+      <div class="moldura"><img id="foto-topo" src="img/perfil.jpg" alt="Solange Emerick sorrindo, de terno branco"></div>
+      <div class="selo" aria-hidden="true">
+        <svg viewBox="0 0 112 112"><defs><path id="circ" d="M56,56 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+          <text><textPath href="#circ" textLength="262" lengthAdjust="spacing">Ciência ✦ Bíblia ✦ Identidade ✦ </textPath></text></svg>
+        <span class="miolo">Sol</span>
+      </div>
+    </div>
+
+    <h1 id="titulo">Restaurando a sua <em>identidade</em> para você <em>governar</em> a própria vida.</h1>
+    <p class="quem rv">Sou <b>mentora de mulheres e escritora</b>. Uno <b>Ciência e Bíblia</b> para você viver de dentro para fora, do jeito que Deus sonhou.</p>
+
+    <div class="numeros rv" style="--d:.1s">
+      <div><b data-conta="15.1">0</b><span>mil mulheres</span></div>
+      <div><b data-conta="6">0</b><span>inteligências</span></div>
+      <div><b data-conta="31">0</b><span>dias de desafio</span></div>
+    </div>
+
+    <a class="desce" href="#comece">Role<i></i></a>
+  </header>
+
+  <div class="faixa" aria-hidden="true"><div>
+    <span>#QuemSouEu</span><span>Identidade</span><span>Governo</span><span>Casamento</span><span>Filhos</span><span>Ciência + Bíblia</span><span>Mulher Solar</span>
+    <span>#QuemSouEu</span><span>Identidade</span><span>Governo</span><span>Casamento</span><span>Filhos</span><span>Ciência + Bíblia</span><span>Mulher Solar</span>
+  </div></div>
+
+  <!-- 01 OFERTAS EMPILHADAS -->
+  <section class="secao" id="comece">
+    <div class="cab rv"><span class="n">01</span><h2>Comece <em>aqui</em></h2></div>
+    <div class="pilha">
+      <a class="carta" style="--k:0" href="https://go.hotmart.com/M99259516Q" target="_blank" rel="noopener">
+        <div class="foto"><img src="img/bordo.jpg" alt="Solange sorrindo, de blazer bordô" loading="lazy"></div>
+        <span class="num">i.</span><span class="etq">Comece hoje</span>
+        <div class="tx">
+          <h3>Desafio <em>31 dias</em> de Identidade</h3>
+          <p>Uma Palavra e um exercício prático por dia para você lembrar quem é em Cristo. Gravado: no seu ritmo.</p>
+          <span class="acao">Quero começar <small>R$ 47</small><span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
+      </a>
+      <a class="carta" style="--k:1" href="https://docs.google.com/forms/d/1xEr2uZQg_M9R2NHua5qY8BtnZJClOJR5R-4rE_e_S-0/viewform" target="_blank" rel="noopener">
+        <div class="foto"><img src="img/branco.jpg" alt="Solange de terno branco, mão no queixo" loading="lazy"></div>
+        <span class="num">ii.</span><span class="etq">4 meses · em grupo</span>
+        <div class="tx">
+          <h3>Mentoria <em>Mulher Solar</em></h3>
+          <p>A Mulher que Governa: só governa bem por fora quem aprendeu a governar por dentro.</p>
+          <span class="acao clara">Quero me aplicar<span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
+      </a>
+      <a class="carta" style="--k:2" href="https://ig.me/m/solangeemerick" target="_blank" rel="noopener">
+        <div class="foto"><img src="img/cafe.jpg" alt="Solange de blazer bordô, tomando café" loading="lazy"></div>
+        <span class="num">iii.</span><span class="etq">Por convite</span>
+        <div class="tx">
+          <h3>Na mesa <em>com elas</em></h3>
+          <p>Mesa com propósito e conexão do alto. Mulheres que se fortalecem, na minha casa.</p>
+          <span class="acao clara">Entrar na lista<span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 02 SISTEMA SOLAR -->
+  <section class="secao">
+    <div class="cab rv"><span class="n">02</span><h2>As 6 <em>inteligências</em></h2></div>
+    <div class="solar rv">
+      <p class="intro">Na <b>Mentoria Mulher Solar</b> você desenvolve seis forças que giram em torno de uma só luz. Toque em cada uma.</p>
+      <div class="orbita" id="orbita">
+        <div class="anel"></div><div class="anel b"></div>
+        <div class="nucleo"><span><small>Cristo</small>no centro</span></div>
+        <div class="giro" id="giro"></div>
+      </div>
+      <div class="detalhe" id="detalhe" aria-live="polite"></div>
+      <a class="acao" href="https://docs.google.com/forms/d/1xEr2uZQg_M9R2NHua5qY8BtnZJClOJR5R-4rE_e_S-0/viewform" target="_blank" rel="noopener">Quero desenvolver as 6<span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </section>
+
+  <!-- 03 RAIO-X -->
+  <section class="secao">
+    <div class="cab rv"><span class="n">03</span><h2>Seu <em>Raio-X</em></h2></div>
+    <div class="raiox rv">
+      <div class="topo-rx">
+        <svg class="sol-rx" viewBox="0 0 66 66" aria-hidden="true"><g id="raios-rx"></g><circle cx="33" cy="33" r="13"/></svg>
+        <div><h3>A Mulher que <em>Governa</em></h3><p class="sub">Grátis · 6 perguntas · 1 minuto</p></div>
+      </div>
+      <div class="palco-rx" id="palco-rx"></div>
+      <button class="voltar" id="voltar" type="button">← Voltar</button>
+    </div>
+  </section>
+
+  <!-- 04 LIVRO -->
+  <section class="secao">
+    <div class="cab rv"><span class="n">04</span><h2>O <em>livro</em></h2></div>
+    <a class="livro rv" id="livro" href="https://ig.me/m/solangeemerick" target="_blank" rel="noopener">
+      <div class="capa" id="capa"><img src="img/livro.webp" alt="Capa do livro Nascidas para Vencer" loading="lazy"></div>
+      <div class="tx">
+        <span class="etq3">Lançamento</span>
+        <h3>Nascidas para <em>Vencer</em></h3>
+        <p class="frase">“Quando eu mudo, o meu mundo muda.”</p>
+        <span class="acao">Quero o meu<span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </div>
+    </a>
+  </section>
+
+  <!-- 05 AGENDA -->
+  <section class="secao">
+    <div class="cab rv"><span class="n">05</span><h2>Leve a Sol <em>até você</em></h2></div>
+    <div class="agenda rv">
+      <figure class="polaroide"><span class="fita"></span><img src="img/palco.jpg" alt="Solange ministrando de microfone na mão" loading="lazy"><figcaption>agenda aberta</figcaption></figure>
+      <div class="abas" role="tablist" id="abas" data-sel="0">
+        <span class="pilula"></span>
+        <button role="tab" aria-selected="true" aria-controls="p-igreja" id="t-igreja">Igrejas</button>
+        <button role="tab" aria-selected="false" aria-controls="p-empresa" id="t-empresa">Empresas</button>
+      </div>
+      <div class="painel" id="p-igreja" role="tabpanel" aria-labelledby="t-igreja">
+        <h3>Ministrações para a sua <em>igreja</em></h3>
+        <p>Cultos, conferências, congressos e encontros de mulheres, com uma Palavra que une Bíblia e ciência.</p>
+        <div class="temas"><span>Identidade em Cristo</span><span>Mulher que governa</span><span>Cura emocional</span><span>Legado e família</span></div>
+        <button class="acao" type="button" data-convite="igreja">Fazer convite<span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </div>
+      <div class="painel" id="p-empresa" role="tabpanel" aria-labelledby="t-empresa" hidden>
+        <h3>Palestras e <em>treinamentos</em></h3>
+        <p>Para empresas e eventos: saúde mental e espiritual, liderança feminina e NR-1 na prática.</p>
+        <div class="temas"><span>Saúde mental</span><span>Liderança</span><span>NR-1</span><span>Inteligência emocional</span></div>
+        <button class="acao" type="button" data-convite="empresa">Pedir proposta<span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 MAIS -->
+  <section class="secao">
+    <div class="cab rv"><span class="n">06</span><h2>Mais de <em>mim</em></h2></div>
+    <div class="mais">
+      <a class="item rv" href="https://ig.me/m/solangeemerick" target="_blank" rel="noopener">
+        <span class="i">a</span><span><b>Mentoria individual premium</b><small>Só comigo. Apenas 3 vagas, por aplicação.</small></span>
+        <span class="vai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="item rv" style="--d:.08s" href="https://www.instagram.com/solangeemerick/" target="_blank" rel="noopener">
+        <span class="i">b</span><span><b>Conteúdo diário no Instagram</b><small>Palavra, ciência e bastidores. @solangeemerick</small></span>
+        <span class="vai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <div class="item desliga rv" style="--d:.16s">
+        <span class="i">c</span><span><b>Instituto Divas em Ação</b><small>O projeto social que eu apoio.</small></span>
+        <span class="breve">Em breve</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="redondo rv"><img src="img/retrato-pb.jpg" alt="Retrato em preto e branco de Solange sorrindo" loading="lazy"></div>
+    <p class="versiculo" id="versiculo">Aquele que começou a boa obra em vós há de completá-la.</p>
+    <p class="ref">FILIPENSES 1:6</p>
+    <p class="assinatura rv">com amor, Sol</p>
+    <p class="contato">Equipe LuhSol · <span style="user-select:all">(41) 99900-1073</span><br><a href="https://www.instagram.com/solangeemerick/" target="_blank" rel="noopener">@SOLANGEEMERICK</a></p>
+  </footer>
+</main>
+
+<dialog class="folha" id="folha" aria-labelledby="folha-t">
+  <div class="alca"></div>
+  <form id="convite" novalidate>
+    <div class="tt"><h3 id="folha-t">Convite para a <em>Sol</em></h3><button class="fecha" type="button" id="fecha" aria-label="Fechar">×</button></div>
+    <div class="campo cheio"><label for="c-nome">Seu nome</label><input id="c-nome" autocomplete="name"></div>
+    <div class="campo cheio"><label for="c-org" id="c-org-l">Igreja ou ministério</label><input id="c-org"></div>
+    <div class="campo"><label for="c-cid">Cidade / UF</label><input id="c-cid"></div>
+    <div class="campo"><label for="c-data">Data</label><input id="c-data" type="date"></div>
+    <div class="campo"><label for="c-tipo">Tipo</label><select id="c-tipo"></select></div>
+    <div class="campo"><label for="c-pub">Público</label><input id="c-pub" inputmode="numeric" placeholder="ex.: 200"></div>
+    <div class="campo cheio"><label for="c-msg">Conte um pouco</label><textarea id="c-msg" placeholder="Tema, horário, quem organiza…"></textarea></div>
+    <p class="aviso" id="aviso" aria-live="polite"></p>
+    <button class="acao" type="submit">Enviar pelo WhatsApp<span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+  </form>
+</dialog>
+
+<script>
+(()=>{
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  const calmo=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const ZAP='5541999001073';
+  const MENTORIA='https://docs.google.com/forms/d/1xEr2uZQg_M9R2NHua5qY8BtnZJClOJR5R-4rE_e_S-0/viewform';
+  const DESAFIO='https://go.hotmart.com/M99259516Q';
+  const ns='http://www.w3.org/2000/svg';
+
+
+  // título palavra por palavra
+  const h=$('#titulo');let i=0;
+  const quebra=n=>{[...n.childNodes].forEach(c=>{
+    if(c.nodeType===3){const f=document.createDocumentFragment();
+      c.textContent.split(/(\s+)/).forEach(w=>{if(!w)return;if(/^\s+$/.test(w)){f.append(' ');return}
+        const o=document.createElement('span');o.className='pal';const d=document.createElement('span');d.textContent=w;d.style.setProperty('--i',i++);o.append(d);f.append(o)});
+      c.replaceWith(f)}else quebra(c)})};
+  quebra(h);
+
+  // revelar + contadores
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target);
+    e.target.querySelectorAll('[data-conta]').forEach(conta)}),{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+  $$('.rv').forEach(el=>io.observe(el));
+  function conta(el){const fim=+el.dataset.conta,t0=performance.now(),dur=calmo?1:1400;
+    (function p(t){const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);el.textContent=fim%1?(fim*e).toFixed(1).replace('.',','):Math.round(fim*e);if(k<1)requestAnimationFrame(p)})(t0)}
+
+  // rolagem: barra, parallax, cartas empilhadas, versículo
+  const barra=$('.leitura'),foto=$('#foto-topo'),cartas=$$('.carta'),pal=[];
+  const v=$('#versiculo');v.innerHTML=v.textContent.split(' ').map(w=>`<span class="w">${w}</span>`).join(' ');pal.push(...v.querySelectorAll('.w'));
+  let pend=false;
+  function rola(){pend=false;const y=scrollY,H=document.documentElement.scrollHeight-innerHeight;
+    barra.style.transform=`scaleX(${H>0?y/H:0})`;
+    if(calmo){pal.forEach(w=>w.classList.add('on'));return}
+    foto.style.transform=`translateY(${Math.min(y*.12,60)-20}px)`;
+    cartas.forEach((c,k)=>{const prox=cartas[k+1];if(!prox){c.style.transform='';return}
+      const r=prox.getBoundingClientRect(),topo=c.getBoundingClientRect().top,dist=r.top-topo;
+      const p=Math.max(0,Math.min(1,1-dist/c.offsetHeight));c.style.transform=`scale(${1-p*.07})`;c.style.filter=`brightness(${1-p*.35})`});
+    const rv=v.getBoundingClientRect(),prog=y>=H-4?1:Math.max(0,Math.min(1,(innerHeight-rv.top)/(innerHeight*.3)));
+    pal.forEach((w,k)=>w.classList.toggle('on',k<prog*pal.length+.5))}
+  addEventListener('scroll',()=>{if(!pend){pend=true;requestAnimationFrame(rola)}},{passive:true});addEventListener('resize',rola);rola();
+
+  // partículas douradas
+  const cv=$('.particulas'),cx=cv.getContext('2d');let W,Hh,pts=[],vivo=true;
+  function tam(){const r=cv.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);W=r.width;Hh=r.height;cv.width=W*d;cv.height=Hh*d;cx.setTransform(d,0,0,d,0,0)}
+  tam();addEventListener('resize',tam);
+  for(let k=0;k<38;k++)pts.push({x:Math.random()*W,y:Math.random()*Hh,r:Math.random()*1.8+.4,v:Math.random()*.35+.1,f:Math.random()*6.28,a:Math.random()*.6+.3});
+  new IntersectionObserver(e=>{vivo=e[0].isIntersecting;if(vivo&&!calmo)requestAnimationFrame(anda)}).observe(cv);
+  function anda(t){if(!vivo)return;cx.clearRect(0,0,W,Hh);
+    pts.forEach(p=>{p.y-=p.v;p.x+=Math.sin(t/1400+p.f)*.25;if(p.y<-5){p.y=Hh+5;p.x=Math.random()*W}
+      const b=.5+.5*Math.sin(t/600+p.f);cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.28);cx.fillStyle=`rgba(217,180,108,${p.a*b})`;cx.shadowColor='rgba(241,221,174,.9)';cx.shadowBlur=6;cx.fill()});
+    requestAnimationFrame(anda)}
+
+  // sistema solar
+  const INT=[
+    {s:'IS',n:'Espiritual',d:'Decisões que nascem da fé, e não do medo. O governo começa no espírito.'},
+    {s:'IAL',n:'Almática',d:'Saber quem você é e não negociar a identidade para ser aceita.'},
+    {s:'IE',n:'Emocional',d:'Sentir tudo, sem ser governada por nada. Dar nome ao que sente antes de reagir.'},
+    {s:'IR',n:'Relacional',d:'Vínculos fortes e limites saudáveis, colocados com amor e sem culpa.'},
+    {s:'IA',n:'Administrativa',d:'Casa, agenda e dinheiro trabalhando a seu favor. Ordem por fora, paz por dentro.'},
+    {s:'IEX',n:'Executiva',d:'Visão que vira constância: começar e terminar aquilo a que se propõe.'}];
+  const giro=$('#giro'),det=$('#detalhe'),orb=$('#orbita');
+  INT.forEach((x,k)=>{const p=document.createElement('div');p.className='planeta';p.style.setProperty('--a',(k*60)+'deg');
+    p.innerHTML=`<button type="button" aria-pressed="false" aria-label="Inteligência ${x.n}">${x.s}</button>`;giro.append(p)});
+  const bts=giro.querySelectorAll('button');
+  function mostra(k){bts.forEach((b,j)=>b.setAttribute('aria-pressed',j===k));const x=INT[k];
+    det.classList.remove('troca');void det.offsetWidth;det.classList.add('troca');
+    det.innerHTML=`<span class="sg">${x.s} · Inteligência</span><h4>${x.n}</h4><p>${x.d}</p>`}
+  bts.forEach((b,k)=>b.addEventListener('click',()=>{mostra(k);orb.classList.add('parada');clearTimeout(orb._t);orb._t=setTimeout(()=>orb.classList.remove('parada'),6000)}));
+  mostra(0);
+  // passeio automático enquanto ninguém toca
+  let auto=0;setInterval(()=>{if(orb.classList.contains('parada')||!det.getBoundingClientRect().top)return;auto=(auto+1)%6;mostra(auto)},4200);
+
+  // Raio-X
+  const P=[
+    {s:'IS',n:'Inteligência Espiritual',q:'Minhas decisões nascem da minha fé, e não do medo.',r:'Seu governo começa no espírito. Quando a fé conduz, o medo perde a voz. “Confia no Senhor de todo o teu coração.” (Pv 3:5)',c:'d'},
+    {s:'IAL',n:'Inteligência Almática',q:'Sei quem eu sou e não negocio minha identidade para ser aceita.',r:'Sua identidade está pedindo cuidado. A mente se renova com o que você repete todos os dias. (Rm 12:2)',c:'d'},
+    {s:'IE',n:'Inteligência Emocional',q:'Reconheço e dou nome ao que sinto antes de reagir.',r:'Você pode sentir tudo, sem ser governada por nada. “Melhor é o que domina o seu espírito do que o que toma uma cidade.” (Pv 16:32)',c:'m'},
+    {s:'IR',n:'Inteligência Relacional',q:'Coloco limites com amor e sem culpa.',r:'Amar com sabedoria é ter vínculos fortes e limites saudáveis.',c:'m'},
+    {s:'IA',n:'Inteligência Administrativa',q:'Minha casa, minha agenda e meu dinheiro trabalham a meu favor.',r:'Governar a casa, o tempo e o dinheiro é Provérbios 31 na prática. Ordem por fora traz paz por dentro.',c:'m'},
+    {s:'IEX',n:'Inteligência Executiva',q:'Começo e termino aquilo a que me proponho.',r:'Sua visão precisa virar constância. Um passo por dia, todos os dias.',c:'d'}];
+  const OP=[[1,'Ainda não'],[2,'Às vezes'],[3,'Já vivo isso']];
+  const rr=$('#raios-rx'),palco=$('#palco-rx'),volta=$('#voltar'),resp=[];let atual=0;
+  for(let k=0;k<12;k++){const a=(k*30-90)*Math.PI/180,l=document.createElementNS(ns,'line');
+    l.setAttribute('x1',33+Math.cos(a)*19);l.setAttribute('y1',33+Math.sin(a)*19);l.setAttribute('x2',33+Math.cos(a)*29);l.setAttribute('y2',33+Math.sin(a)*29);rr.append(l)}
+  const raios=rr.querySelectorAll('line');
+  function acende(){const n=resp.filter(Boolean).length;raios.forEach((l,k)=>l.classList.toggle('on',k<n*2));
+    $('.sol-rx circle').style.transform=`scale(${1+n*.04})`}
+  function monta(){palco.innerHTML=P.map((p,k)=>`<div class="perg ${k<atual?'fora':k>atual?'espera':''}" data-k="${k}">
+      <span class="q">${k+1} de 6 · ${p.s}</span><p>${p.q}</p>
+      <div class="opcoes">${OP.map(o=>`<button type="button" data-v="${o[0]}" class="${resp[k]===o[0]?'marcada':''}">${o[1]}</button>`).join('')}</div></div>`).join('');
+    volta.classList.toggle('ve',atual>0);acende()}
+  function vai(k){atual=k;palco.querySelectorAll('.perg').forEach((el,j)=>{el.classList.toggle('fora',j<k);el.classList.toggle('espera',j>k)});volta.classList.toggle('ve',k>0)}
+  palco.addEventListener('click',e=>{const b=e.target.closest('button[data-v]');if(!b)return;const k=+b.closest('.perg').dataset.k;
+    resp[k]=+b.dataset.v;b.parentNode.querySelectorAll('button').forEach(x=>x.classList.toggle('marcada',x===b));acende();
+    setTimeout(()=>{if(k<5)vai(k+1);else fim()},calmo?0:380)});
+  volta.addEventListener('click',()=>{if(atual>0)vai(atual-1)});
+  function fim(){let m=0;resp.forEach((x,k)=>{if(x<resp[m])m=k});const p=P[m],todas=resp.every(x=>x===3);
+    const link=todas?'https://ig.me/m/solangeemerick':p.c==='d'?DESAFIO:MENTORIA,nome=todas?'Na mesa com elas':p.c==='d'?'Desafio 31 dias':'Mentoria Mulher Solar';
+    const msg=`Olá, equipe da Sol! Fiz o Raio-X da Mulher que Governa e ${todas?'tirei as 6 inteligências em dia':'a inteligência que pede atenção é a '+p.n}. Quero receber o Raio-X completo.`;
+    volta.classList.remove('ve');
+    palco.innerHTML=`<div class="resultado"><span class="etq2">${todas?'Você está governando':'Pede atenção agora'}</span>
+      <h4>${todas?'Que lindo ver você assim':p.n}</h4>
+      <p>${todas?'As 6 inteligências já aparecem na sua vida. O próximo nível é multiplicar ao lado de outras mulheres.':p.r}</p>
+      <a class="acao" href="${link}" target="_blank" rel="noopener">${nome}<span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="acao linha" href="https://wa.me/${ZAP}?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">Receber o Raio-X completo<span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <button class="refaz" type="button" id="refaz">↺ Refazer</button></div>`;
+    $('#refaz').addEventListener('click',()=>{resp.length=0;atual=0;monta()})}
+  monta();
+
+  // livro com inclinação 3D
+  const livro=$('#livro'),capa=$('#capa');
+  if(!calmo){livro.addEventListener('pointermove',e=>{const r=livro.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      capa.style.transform=`rotateY(${x*28}deg) rotateX(${-y*20}deg)`});
+    livro.addEventListener('pointerleave',()=>capa.style.transform='')}
+
+  // abas agenda
+  const abas=$('#abas'),tabs=abas.querySelectorAll('[role=tab]');
+  tabs.forEach((t,k)=>t.addEventListener('click',()=>{abas.dataset.sel=k;tabs.forEach((x,j)=>{x.setAttribute('aria-selected',j===k);const p=document.getElementById(x.getAttribute('aria-controls'));p.hidden=j!==k;if(j===k){p.classList.remove('troca');void p.offsetWidth;p.classList.add('troca')}})}));
+
+  // folha de convite
+  const folha=$('#folha'),form=$('#convite'),aviso=$('#aviso');let modo='igreja';
+  const TIPOS={igreja:['Culto','Conferência','Congresso de mulheres','Encontro ou chá de mulheres','Retiro','Outro'],empresa:['Palestra','Treinamento','SIPAT / NR-1','Evento corporativo','Outro']};
+  $$('[data-convite]').forEach(b=>b.addEventListener('click',()=>{modo=b.dataset.convite;
+    $('#c-org-l').textContent=modo==='igreja'?'Igreja ou ministério':'Empresa ou evento';
+    $('#c-tipo').innerHTML=TIPOS[modo].map(t=>`<option>${t}</option>`).join('');aviso.textContent='';
+    folha.showModal?folha.showModal():folha.setAttribute('open','')}));
+  $('#fecha').addEventListener('click',()=>folha.close());
+  folha.addEventListener('click',e=>{if(e.target===folha)folha.close()});
+  form.addEventListener('submit',e=>{e.preventDefault();const g=id=>$(id).value.trim();
+    if(!g('#c-nome')||!g('#c-org')||!g('#c-cid')){aviso.textContent='Preencha nome, '+(modo==='igreja'?'igreja':'empresa')+' e cidade, por favor.';return}
+    const d=g('#c-data')?g('#c-data').split('-').reverse().join('/'):'a combinar';
+    const txt=`Olá, equipe da Sol! ${modo==='igreja'?'Quero convidar a Solange para ministrar.':'Quero uma proposta de palestra/treinamento da Solange.'}\n\nNome: ${g('#c-nome')}\n${modo==='igreja'?'Igreja':'Empresa'}: ${g('#c-org')}\nCidade: ${g('#c-cid')}\nData: ${d}\nTipo: ${g('#c-tipo')}${g('#c-pub')?'\nPúblico: '+g('#c-pub'):''}${g('#c-msg')?'\n\n'+g('#c-msg'):''}`;
+    window.open(`https://wa.me/${ZAP}?text=${encodeURIComponent(txt)}`,'_blank','noopener');folha.close()});
+})();
+</script>
+</body>
+</html>
